@@ -1,0 +1,20 @@
+$font-texto: 'Raleway', sans-serif;
+$font-titulo: 'Calistoga', cursive;
+
+$azul-escuro: #2E7BA2;
+$azul-claro: #C8DEEF;
+$azul-botao-hover: #519EC5;
+$mostarda: #DF9010;
+$salmao-claro: #FBF0DD;
+$salmao: #FACF9D;
+$branco-principal: #FFFFFF;
+$font-color: #444444;
+
+
+main {
+    background-image: linear-gradient($azul-claro, $salmao-claro, $salmao);
+}
+
+.material-icons {
+    font-size: 28px;
+}
