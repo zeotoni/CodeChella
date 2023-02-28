@@ -19,7 +19,7 @@
             position: absolute;
             top: 140px;
             right: 0;
-            display: none;
+            display: flex;
             flex-direction: column;
             gap: 8px;      
             background-color: $azul-escuro;
@@ -28,10 +28,27 @@
             font-weight: 700;
             text-align: center;
             padding: 16px;
+            list-style: none;
 
             &-item {
-                border-bottom: 1px solid $branco-principal;
                 padding: 8px 0;
+                position: relative;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 90%;
+                    height: 2px;
+                    background: white;
+                    bottom: -3px;
+                    left: 50%;
+                    transform: translatex(-50%)
+                }
+
+                &:last-child::after{
+                    display: none;
+                }
+
             }
         }
     }
@@ -152,7 +169,12 @@
 
         &__img {
             height: 338px;
-            padding: 32px 0;
+            margin: 0 auto;
+            width: 360px;
+            background-image: url(../img/rodape-img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
         &__links {
