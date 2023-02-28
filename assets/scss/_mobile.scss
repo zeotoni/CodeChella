@@ -3,15 +3,36 @@
         background-color: $azul-escuro;
         
         &__container {
-            width: 312px;
+            width: 296px;
             display: flex;
             margin: 0 auto;
             padding: 32px 0;
+            justify-content: space-between;
         }
 
         &__img {
             width: 233.9px;
             height: 64px;
+        }
+
+        &__list {
+            position: absolute;
+            top: 140px;
+            right: 0;
+            display: none;
+            flex-direction: column;
+            gap: 8px;      
+            background-color: $azul-escuro;
+            color: $branco-principal; 
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            padding: 16px;
+
+            &-item {
+                border-bottom: 1px solid $branco-principal;
+                padding: 8px 0;
+            }
         }
     }
 
@@ -67,6 +88,107 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
+        }
+    }
+
+    .programacao {
+        text-align: center;
+        color: $font-color;
+
+        &__titulo {
+            font-family: $font-titulo;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 62px;
+            margin: 0 auto;
+            padding: 16px 0 32px;
+        }
+
+        &__info {
+            padding: 24px;
+
+            &-titulo {
+                color: $branco-principal;
+                background-color: $mostarda;
+                font-size: 28px;
+                font-weight: 400;
+                font-family: $font-titulo;
+                padding: 16px 0;
+                margin-bottom: 48px;
+            }
+
+            &-list {
+               color: $font-color; 
+               font-family: $font-texto;
+               display: flex;
+               flex-direction: column;
+               gap: 32px;
+
+               &-banda {
+                font-size: 32px;
+               }
+
+               &-banda:first-of-type {
+                font-weight: 800;
+                font-size: 48px;
+               }
+
+               &-banda:nth-child(1n+2) {
+                font-weight: 700;
+                font-size: 40px;
+               } 
+
+               &-banda:nth-child(1n+6) {
+                font-weight: 700;
+                font-size: 32px;
+               }
+
+               &-banda:nth-child(1n+10) {
+                font-weight: 500;
+                font-size: 32px;
+               }
+            }
+        }
+
+        &__img {
+            height: 338px;
+            padding: 32px 0;
+        }
+
+        &__links {
+            display: block;
+        }
+    }
+
+    .footer {
+        text-align: center;
+        font-family: $font-texto;
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+
+        &__contato {
+
+            &-logo {
+                width: 233.9px;
+                height: 64px;
+                padding-bottom: 8px;
+            }
+        }
+       
+        &__links {
+            display: block;
+            padding: 16px 0 32px;
+            
+            & i {
+                margin: 0 5px;
+            }
+        }
+
+        &__info {
+            line-height: 40px;
+            padding: 0 24px 44px;
         }
     }
     

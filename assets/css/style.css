@@ -25,14 +25,33 @@ main {
     background-color: #2E7BA2;
   }
   .header__container {
-    width: 312px;
+    width: 296px;
     display: flex;
     margin: 0 auto;
     padding: 32px 0;
+    justify-content: space-between;
   }
   .header__img {
     width: 233.9px;
     height: 64px;
+  }
+  .header__list {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #2E7BA2;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px;
+  }
+  .header__list-item {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 8px 0;
   }
   .banner {
     background-image: url(../img/Banner.png);
@@ -80,6 +99,87 @@ main {
     align-items: center;
     justify-content: center;
     gap: 15px;
+  }
+  .programacao {
+    text-align: center;
+    color: #444444;
+  }
+  .programacao__titulo {
+    font-family: "Calistoga", cursive;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    margin: 0 auto;
+    padding: 16px 0 32px;
+  }
+  .programacao__info {
+    padding: 24px;
+  }
+  .programacao__info-titulo {
+    color: #FFFFFF;
+    background-color: #DF9010;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Calistoga", cursive;
+    padding: 16px 0;
+    margin-bottom: 48px;
+  }
+  .programacao__info-list {
+    color: #444444;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .programacao__info-list-banda {
+    font-size: 32px;
+  }
+  .programacao__info-list-banda:first-of-type {
+    font-weight: 800;
+    font-size: 48px;
+  }
+  .programacao__info-list-banda:nth-child(1n+2) {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .programacao__info-list-banda:nth-child(1n+6) {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .programacao__info-list-banda:nth-child(1n+10) {
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .programacao__img {
+    height: 338px;
+    padding: 32px 0;
+  }
+  .programacao__links {
+    display: block;
+  }
+  .footer {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__contato-logo {
+    width: 233.9px;
+    height: 64px;
+    padding-bottom: 8px;
+  }
+  .footer__links {
+    display: block;
+    padding: 16px 0 32px;
+  }
+  .footer__links i {
+    margin: 0 5px;
+  }
+  .footer__info {
+    line-height: 40px;
+    padding: 0 24px 44px;
   }
 }
 
