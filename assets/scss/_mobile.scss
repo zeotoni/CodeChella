@@ -1,4 +1,5 @@
 @media screen and (min-width: 0) {
+    // index.html
     .header {
         background-color: $azul-escuro;
         
@@ -19,11 +20,10 @@
             position: absolute;
             top: 140px;
             right: 0;
-            display: flex;
+            display: none;
             flex-direction: column;
             gap: 8px;      
             background-color: $azul-escuro;
-            color: $branco-principal; 
             font-size: 20px;
             font-weight: 700;
             text-align: center;
@@ -33,13 +33,18 @@
             &-item {
                 padding: 8px 0;
                 position: relative;
+
+                & a {
+                    text-decoration: none;
+                    color: $branco-principal; 
+                }
                 
                 &::after {
                     content: "";
                     position: absolute;
                     width: 90%;
                     height: 2px;
-                    background: white;
+                    background: $branco-principal;
                     bottom: -3px;
                     left: 50%;
                     transform: translatex(-50%)
@@ -176,15 +181,12 @@
             background-size: cover;
             background-position: center;
         }
-
-        &__links {
-            display: block;
-        }
     }
 
     .footer {
         text-align: center;
         font-family: $font-texto;
+        color: $font-color;
         font-size: 20px;
         font-weight: 500;
         display: flex;
