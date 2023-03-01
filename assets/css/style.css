@@ -228,6 +228,7 @@ main {
   }
   .banner__titulo {
     font-size: 64px;
+    padding: 0 15%;
   }
   .sobre__img {
     width: 609px;
@@ -301,6 +302,66 @@ main {
   }
   .footer__info-dev br {
     display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__container {
+    display: flex;
+    width: 1040px;
+    justify-content: space-between;
+    padding: 32px 0;
+  }
+  .header__list-item:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+  }
+  .banner {
+    height: 407px;
+  }
+  .sobre {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+    gap: 48px;
+  }
+  .sobre__info {
+    padding-top: 32px;
+    box-sizing: border-box;
+    width: 540px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .sobre__texto {
+    margin: 0;
+    padding: 0;
+  }
+  .programacao__info-titulo::before {
+    width: 300px;
+    left: -350px;
+  }
+  .programacao__info-titulo::after {
+    width: 300px;
+    right: -350px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 120px;
+  }
+  .footer__contato {
+    text-align: start;
+  }
+  .footer__contato-logo {
+    padding-bottom: 8px;
+  }
+  .footer__info {
+    padding: 0;
+  }
+  .footer__info-dev br {
+    display: block;
   }
 }
 
