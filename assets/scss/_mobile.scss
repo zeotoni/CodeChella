@@ -1,79 +1,9 @@
 @media screen and (min-width: 0) {
-    // index.html
-    .header {
-        background-color: $azul-escuro;
-        
-        &__container {
-            width: 296px;
-            display: flex;
-            margin: 0 auto;
-            padding: 32px 0;
-            justify-content: space-between;
-        }
 
-        &__img {
-            width: 233.9px;
-            height: 64px;
-        }
+    // ......index.html......
 
-        &__list {
-            position: absolute;
-            top: 140px;
-            right: 0;
-            display: none;
-            flex-direction: column;
-            gap: 8px;      
-            background-color: $azul-escuro;
-            font-size: 20px;
-            font-weight: 700;
-            text-align: center;
-            padding: 16px;
-            list-style: none;
-
-            &-item {
-                padding: 8px 0;
-                position: relative;
-
-                & a {
-                    text-decoration: none;
-                    color: $branco-principal; 
-                }
-                
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 90%;
-                    height: 2px;
-                    background: $branco-principal;
-                    bottom: -3px;
-                    left: 50%;
-                    transform: translatex(-50%)
-                }
-
-                &:last-child::after{
-                    display: none;
-                }
-
-            }
-        }
-    }
-
-    .banner {
+    .banner-home {
         background-image: url(../img/Banner.png);
-        background-size: cover;
-        background-position: center;
-        height: 270px;
-        display: flex;
-
-        &__titulo {
-            text-align: center;
-            color: $font-color;
-            font-size: 32px;
-            font-weight: 400;
-            margin: 0 auto;
-            font-family: $font-titulo;
-            align-self: center;
-        }
     }
 
     .sobre {
@@ -183,37 +113,31 @@
         }
     }
 
-    .footer {
+    //.....experiencia.html......
+
+    .banner-exp {
+        background-image: url(../img/Banner-exp.png);
+    }
+
+    .experiencia {
         text-align: center;
+        padding: 32px 24px;
         font-family: $font-texto;
         color: $font-color;
-        font-size: 20px;
-        font-weight: 500;
-        display: flex;
-        flex-direction: column;
-
-        &__contato {
-
-            &-logo {
-                width: 233.9px;
-                height: 64px;
-                padding-bottom: 8px;
-            }
-        }
-       
-        &__links {
-            display: block;
-            padding: 16px 0 32px;
-            
-            & i {
-                margin: 0 5px;
-            }
-        }
 
         &__info {
-            line-height: 40px;
-            padding: 0 24px 44px;
+            padding: 32px 28px 0;
+
+            &-titulo {
+                font-size: 32px;
+                font-weight: 700;
+            }
+
+            &-texto {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 40px;
+            }
         }
     }
-    
 }

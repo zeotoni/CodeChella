@@ -10,4 +10,70 @@
     border-radius: 16px;
     padding: 8px 0;
     margin: 0 24px;
+
+    &:hover {
+        background-color: $azul-botao-hover;
+        transition: 0.7s;
+    }
+}
+
+
+// menu hambuguer
+.header__list {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    flex-direction: column;
+    gap: 8px;      
+    background-color: $azul-escuro;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px;
+    list-style: none;
+
+    &-item {
+        padding: 8px 0;
+        position: relative;
+
+        & a {
+            text-decoration: none;
+            color: $branco-principal; 
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 2px;
+            background: $branco-principal;
+            bottom: -3px;
+            left: 50%;
+            transform: translatex(-50%)
+        }
+
+        &:last-child::after{
+            display: none;
+        }
+
+    }
+
+}
+
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+    display: flex;
+
+    &__titulo {
+        text-align: center;
+        color: $font-color;
+        font-size: 32px;
+        font-weight: 400;
+        margin: 0 auto;
+        font-family: $font-titulo;
+        align-self: center;
+    }
 }

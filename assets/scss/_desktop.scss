@@ -1,21 +1,5 @@
 @media screen and (min-width: 1280px) {
-    .header {
-        &__container {
-            display: flex;
-            width: 1040px;
-            justify-content: space-between;
-            padding: 32px 0;
-        }
-
-        &__list {
-
-            &-item:hover {
-                text-decoration: underline;
-                color: $branco-principal;
-            }
-        }
-    }
-
+   
     .banner {
         height: 407px;
 
@@ -59,29 +43,6 @@
                     width: 300px;
                     right: -350px;
                 }
-            }
-        }
-    }
-
-    .footer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 60px 120px;
-        
-        &__contato {
-            text-align: start;
-
-            &-logo {
-                padding-bottom: 8px;
-            }
-        }
-
-        &__info {
-            padding: 0;
-
-            &-dev br {
-                display: block;
             }
         }
     }

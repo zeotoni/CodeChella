@@ -1,4 +1,4 @@
-main {
+body {
   background-image: linear-gradient(#C8DEEF, #FBF0DD, #FACF9D);
 }
 
@@ -19,6 +19,61 @@ main {
   padding: 8px 0;
   margin: 0 24px;
 }
+.btn:hover {
+  background-color: #519EC5;
+  transition: 0.7s;
+}
+
+.header__list {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #2E7BA2;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px;
+  list-style: none;
+}
+.header__list-item {
+  padding: 8px 0;
+  position: relative;
+}
+.header__list-item a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.header__list-item::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background: #FFFFFF;
+  bottom: -3px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.header__list-item:last-child::after {
+  display: none;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 270px;
+  display: flex;
+}
+.banner__titulo {
+  text-align: center;
+  color: #444444;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0 auto;
+  font-family: "Calistoga", cursive;
+  align-self: center;
+}
 
 @media screen and (min-width: 0) {
   .header {
@@ -36,55 +91,113 @@ main {
     height: 64px;
   }
   .header__list {
-    position: absolute;
-    top: 140px;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    gap: 8px;
-    background-color: #2E7BA2;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-    padding: 16px;
-    list-style: none;
-  }
-  .header__list-item {
-    padding: 8px 0;
-    position: relative;
-  }
-  .header__list-item a {
-    text-decoration: none;
-    color: #FFFFFF;
-  }
-  .header__list-item::after {
-    content: "";
-    position: absolute;
-    width: 90%;
-    height: 2px;
-    background: #FFFFFF;
-    bottom: -3px;
-    left: 50%;
-    transform: translatex(-50%);
-  }
-  .header__list-item:last-child::after {
-    display: none;
-  }
-  .banner {
-    background-image: url(../img/Banner.png);
-    background-size: cover;
-    background-position: center;
-    height: 270px;
     display: flex;
   }
-  .banner__titulo {
+  .header__menu-hmb {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    width: 648px;
+    justify-content: center;
+    display: block;
     text-align: center;
+    padding: 16px 0;
+  }
+  .header__list {
+    display: flex;
+    flex-direction: row;
+    position: unset;
+    justify-content: center;
+    gap: 32px;
+  }
+  .header__list-item::after {
+    display: none;
+  }
+  .header__menu-hmb {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__container {
+    display: flex;
+    width: 1040px;
+    justify-content: space-between;
+    padding: 32px 0;
+  }
+  .header__list-item:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 0) {
+  .footer {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
     color: #444444;
-    font-size: 32px;
-    font-weight: 400;
-    margin: 0 auto;
-    font-family: "Calistoga", cursive;
-    align-self: center;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__contato-logo {
+    width: 233.9px;
+    height: 64px;
+    padding-bottom: 8px;
+  }
+  .footer__links {
+    display: block;
+    padding: 16px 0 32px;
+  }
+  .footer__links i {
+    margin: 0 5px;
+  }
+  .footer__info {
+    line-height: 40px;
+    padding: 0 24px 44px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 24px 0;
+  }
+  .footer__contato-logo {
+    padding-bottom: 28px;
+  }
+  .footer__links {
+    display: unset;
+  }
+  .footer__info {
+    padding: 28px 0 12px;
+  }
+  .footer__info-dev br {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 120px;
+  }
+  .footer__contato {
+    text-align: start;
+  }
+  .footer__contato-logo {
+    padding-bottom: 8px;
+  }
+  .footer__info {
+    padding: 0;
+  }
+  .footer__info-dev br {
+    display: block;
+  }
+}
+@media screen and (min-width: 0) {
+  .banner-home {
+    background-image: url(../img/Banner.png);
   }
   .sobre {
     text-align: center;
@@ -176,53 +289,29 @@ main {
     background-size: cover;
     background-position: center;
   }
-  .footer {
+  .banner-exp {
+    background-image: url(../img/Banner-exp.png);
+  }
+  .experiencia {
     text-align: center;
+    padding: 32px 24px;
     font-family: "Raleway", sans-serif;
     color: #444444;
-    font-size: 20px;
+  }
+  .experiencia__info {
+    padding: 32px 28px 0;
+  }
+  .experiencia__info-titulo {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .experiencia__info-texto {
     font-weight: 500;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer__contato-logo {
-    width: 233.9px;
-    height: 64px;
-    padding-bottom: 8px;
-  }
-  .footer__links {
-    display: block;
-    padding: 16px 0 32px;
-  }
-  .footer__links i {
-    margin: 0 5px;
-  }
-  .footer__info {
+    font-size: 20px;
     line-height: 40px;
-    padding: 0 24px 44px;
   }
 }
 @media screen and (min-width: 768px) {
-  .header__container {
-    width: 648px;
-    justify-content: center;
-    display: block;
-    text-align: center;
-    padding: 16px 0;
-  }
-  .header__list {
-    display: flex;
-    flex-direction: row;
-    position: unset;
-    justify-content: center;
-    gap: 32px;
-  }
-  .header__list-item::after {
-    display: none;
-  }
-  .header__menu-hmb {
-    display: none;
-  }
   .banner {
     height: 384px;
   }
@@ -288,33 +377,8 @@ main {
     width: 100%;
     height: 338px;
   }
-  .footer {
-    padding: 24px 0;
-  }
-  .footer__contato-logo {
-    padding-bottom: 28px;
-  }
-  .footer__links {
-    display: unset;
-  }
-  .footer__info {
-    padding: 28px 0 12px;
-  }
-  .footer__info-dev br {
-    display: none;
-  }
 }
 @media screen and (min-width: 1280px) {
-  .header__container {
-    display: flex;
-    width: 1040px;
-    justify-content: space-between;
-    padding: 32px 0;
-  }
-  .header__list-item:hover {
-    text-decoration: underline;
-    color: #FFFFFF;
-  }
   .banner {
     height: 407px;
   }
@@ -344,24 +408,6 @@ main {
   .programacao__info-titulo::after {
     width: 300px;
     right: -350px;
-  }
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 120px;
-  }
-  .footer__contato {
-    text-align: start;
-  }
-  .footer__contato-logo {
-    padding-bottom: 8px;
-  }
-  .footer__info {
-    padding: 0;
-  }
-  .footer__info-dev br {
-    display: block;
   }
 }
 

@@ -1,32 +1,5 @@
 @media screen and (min-width: 768px){
 
-    .header {
-  
-        &__container {
-            width: 648px;
-            justify-content: center;
-            display: block;
-            text-align: center;
-            padding: 16px 0;
-        }
-
-        &__list {
-            display: flex;
-            flex-direction: row;
-            position: unset;
-            justify-content: center;
-            gap: 32px;
-
-            &-item::after {
-                display: none;
-            }
-        }
-
-        &__menu-hmb {
-            display: none;
-        }
-    }
-
     .banner {
         height: 384px;
 
@@ -108,29 +81,6 @@
         &__img {
             width: 100%;
             height: 338px;
-        }
-    }
-
-    .footer {
-        padding: 24px 0;
-
-        &__contato {
-
-            &-logo {
-                padding-bottom: 28px;
-            }
-        }
-
-        &__links {
-            display: unset;
-        }
-
-        &__info {
-            padding: 28px 0 12px;
-
-            &-dev br {
-                display: none;
-            }
         }
     }
 }
