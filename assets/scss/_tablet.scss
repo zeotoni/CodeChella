@@ -83,4 +83,23 @@
             height: 338px;
         }
     }
+
+    //.....experiencia.html......
+
+    .banner-exp {
+        background-image: url(../img/Banner-exp-tablet.png);
+    }
+
+    .experiencia {
+        padding: 32px 60px;
+
+        &__img {
+            width: 609px;
+            height: 381px;
+        }
+
+        &__info {
+            padding: 32px calc(19% - 114px) 0;
+        }
+    }
 }

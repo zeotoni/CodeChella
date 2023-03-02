@@ -91,7 +91,7 @@ body {
     height: 64px;
   }
   .header__list {
-    display: flex;
+    display: none;
   }
   .header__menu-hmb {
     display: block;
@@ -299,7 +299,7 @@ body {
     color: #444444;
   }
   .experiencia__info {
-    padding: 32px 28px 0;
+    padding: 32px 8px 0;
   }
   .experiencia__info-titulo {
     font-size: 32px;
@@ -377,6 +377,19 @@ body {
     width: 100%;
     height: 338px;
   }
+  .banner-exp {
+    background-image: url(../img/Banner-exp-tablet.png);
+  }
+  .experiencia {
+    padding: 32px 60px;
+  }
+  .experiencia__img {
+    width: 609px;
+    height: 381px;
+  }
+  .experiencia__info {
+    padding: 32px calc(19% - 114px) 0;
+  }
 }
 @media screen and (min-width: 1280px) {
   .banner {
@@ -408,6 +421,9 @@ body {
   .programacao__info-titulo::after {
     width: 300px;
     right: -350px;
+  }
+  .experiencia {
+    display: flex;
   }
 }
 
