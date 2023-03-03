@@ -65,7 +65,8 @@
                 font-size: 28px;
                 font-weight: 400;
                 font-family: $font-titulo;
-                padding: 16px 0;
+                display: inline-block;
+                padding: 16px;
                 margin-bottom: 48px;
             }
 
@@ -137,6 +138,76 @@
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 40px;
+            }
+        }
+    }
+
+    // .....Mapa de Setores.....
+
+    .banner-setores {
+        background-image: url(../img/Banner-setores.png);
+    }
+
+    .mapa {
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $font-texto;
+        color: $font-color;
+
+        &__legenda {
+
+            &-titulo {
+                padding-bottom: 24px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            
+            &-lista {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                &-item {
+                    font-size: 20px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                }
+            }
+        }
+    }
+
+    .detalhes {
+        text-align: center;
+        color: $font-color;
+        font-family: $font-texto;
+        padding: 32px 24px;
+
+        &__titulo {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        &__card {
+            padding: 32px 0;
+
+            &-info {
+                padding-top: 24px;
+
+                &-titulo {
+                    font-size: 32px;
+                    font-weight: 700;
+                    padding-bottom: 24px;
+                }
+
+                &-texto {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 40px;
+                }
             }
         }
     }

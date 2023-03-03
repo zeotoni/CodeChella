@@ -1,3 +1,5 @@
+// estilos botão
+
 .btn {
     font-family: $font-texto;
     font-weight: 700;
@@ -17,8 +19,12 @@
     }
 }
 
+.material-icons {
+    font-size: 28px;
+}
 
-// menu hambuguer
+
+// menu mobile
 .header__list {
     position: absolute;
     top: 140px;

@@ -51,22 +51,29 @@
 
     //.....experiencia.html......
 
-    // .banner-exp {
-    //     background-image: url(../img/Banner-exp-tablet.png);
-    // }
-
     .experiencia {
 
         display: flex;
-        // padding: 32px 60px;
+        align-items: center;
+        padding: 64px 100px;
+        gap: 48px;
 
-        // &__img {
-        //     width: 609px;
-        //     height: 381px;
-        // }
+        &__img {
+            width: 609px;
+            height: 381px;
+        }
 
-        // &__info {
-        //     padding: 32px calc(19% - 114px) 0;
-        // }
+        &__info {
+            padding: 0;
+            text-align: justify;
+
+            &-titulo {
+                padding-bottom: 24px;
+            }
+        }
+    }
+
+    .experiencia:nth-of-type(3) {
+        flex-direction: row-reverse;
     }
 }
