@@ -101,4 +101,34 @@
             padding: 32px calc(19% - 114px) 0;
         }
     }
+
+     // .....Mapa de Setores.....
+
+    .banner-setores {
+        background-image: url(../img/Banner-setores-tablet.png);
+    }
+
+    .mapa {
+        gap: 32px;
+        padding: 32px 60px;
+
+    }
+
+    .detalhes {
+
+        padding: 32px 60px;
+
+        &__titulo {
+            font-size: 40px;
+        }
+
+        &__card {
+            padding: 32px 0 0;
+
+            &-img {
+                width: 382.4px;
+                height: 239px;  
+            }
+        }
+    }
 }

@@ -445,6 +445,26 @@ body {
   .experiencia__info {
     padding: 32px calc(19% - 114px) 0;
   }
+  .banner-setores {
+    background-image: url(../img/Banner-setores-tablet.png);
+  }
+  .mapa {
+    gap: 32px;
+    padding: 32px 60px;
+  }
+  .detalhes {
+    padding: 32px 60px;
+  }
+  .detalhes__titulo {
+    font-size: 40px;
+  }
+  .detalhes__card {
+    padding: 32px 0 0;
+  }
+  .detalhes__card-img {
+    width: 382.4px;
+    height: 239px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .banner {
@@ -496,6 +516,32 @@ body {
   }
   .experiencia:nth-of-type(3) {
     flex-direction: row-reverse;
+  }
+  .banner-setores {
+    background-image: url(../img/Banner-setores-desktop.png);
+  }
+  .mapa {
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+    padding: 32px 120px;
+  }
+  .mapa__img {
+    width: 590px;
+    height: 590px;
+  }
+  .detalhes {
+    padding: 32px 60px;
+  }
+  .detalhes__titulo {
+    font-size: 40px;
+  }
+  .detalhes__card {
+    padding: 32px 0 0;
+  }
+  .detalhes__card-img {
+    width: 382.4px;
+    height: 239px;
   }
 }
 
