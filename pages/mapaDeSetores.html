@@ -11,18 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5a6cf2600c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
    <header class="header">
     <div class="header__container">
-        <a href="../../index.html"><img src="../img/Logo-branco.svg" alt="Logo da CodeChella" class="header__img"></a>
-        <input class="header__container-check" type="checkbox" id="menu">
-        <label for="menu">
-            <span> <img src="../img/menu.svg" alt="ícone de menu hamburguer" class="header__menu-hmb"></span>
-        </label>
-        <ul class="header__list menu-hamb">
+        <a href="../../index.html"><img src="../assets/img/Logo-branco.svg" alt="Logo da CodeChella" class="header__img"></a>
+        <button type="button" data-btn-menu class="header__menu-mobile"></button>
+        <ul class="header__list hidden" data-ul-mobile>
             <li class="header__list-item"><a href="./experiencia.html">A experiência</a></li>
             <li class="header__list-item"><a href="./mapaDeSetores.html">Mapa de Setores</a></li>
             <li class="header__list-item"><a href="#">Informações</a></li>
@@ -35,15 +32,15 @@
             <h1 class="banner__titulo">Mapa de Setores</h1>
         </section>
         <section class="mapa">
-            <img src="../img/Mapa setores.png" alt="Imagem do mapa de setores do festival CodeChella" class="mapa__img">
+            <img src="../assets/img/Mapa setores.png" alt="Imagem do mapa de setores do festival CodeChella" class="mapa__img">
             <div class="mapa__legenda">
                 <h3 class="mapa__legenda-titulo">Legenda:</h3>
                 <ul class="mapa__legenda-lista">
-                    <li class="mapa__legenda-lista-item"><img src="../img/Rectangle-azulescuro.svg" class="li-img">Pista Premium</li>
-                    <li class="mapa__legenda-lista-item"><img src="../img/Rectangle -rosa.svg" class="li-img">Pista Comum</li>
-                    <li class="mapa__legenda-lista-item"><img src="../img/Rectangle-verde-piscina.svg" class="li-img">Cadeiras térreo</li>
-                    <li class="mapa__legenda-lista-item"><img src="../img/Rectangle -roxo.svg" class="li-img">Cadeiras superiores</li>
-                    <li class="mapa__legenda-lista-item"><img src="../img/Rectangle-azul-claro.svg" class="li-img">Cadeiras superiores</li>
+                    <li class="mapa__legenda-lista-item"><img src="../assets/img/Rectangle-azulescuro.svg" class="li-img">Pista Premium</li>
+                    <li class="mapa__legenda-lista-item"><img src="../assets/img/Rectangle -rosa.svg" class="li-img">Pista Comum</li>
+                    <li class="mapa__legenda-lista-item"><img src="../assets/img/Rectangle-verde-piscina.svg" class="li-img">Cadeiras térreo</li>
+                    <li class="mapa__legenda-lista-item"><img src="../assets/img/Rectangle -roxo.svg" class="li-img">Cadeiras superiores</li>
+                    <li class="mapa__legenda-lista-item"><img src="../assets/img/Rectangle-azul-claro.svg" class="li-img">Cadeiras superiores</li>
                 </ul>
             </div>
         </section>
@@ -52,8 +49,8 @@
             <div class="detalhes__card-section">
                 <div class="detalhes__card">
                     <picture>
-                        <source srcset="../img/pista-tablet.png" media="(min-width: 768px)">
-                        <img src="../img/pista.png" alt="imagem de uma pista de dança" class="detalhes__card-img">
+                        <source srcset="../assets/img/pista-tablet.png" media="(min-width: 768px)">
+                        <img src="../assets/img/pista.png" alt="imagem de uma pista de dança" class="detalhes__card-img">
                     </picture>
                     <div class="detalhes__card-info">
                         <h2 class="detalhes__card-info-titulo">Pista</h2>
@@ -62,8 +59,8 @@
                 </div>
                 <div class="detalhes__card">
                     <picture>
-                        <source srcset="../img/pista-premium-tablet.png" media="(min-width: 768px)">
-                        <img src="../img/pista-premium.png" alt="Imagem de uma pista premium de dança" class="detalhes__card-img">
+                        <source srcset="../assets/img/pista-premium-tablet.png" media="(min-width: 768px)">
+                        <img src="../assets/img/pista-premium.png" alt="Imagem de uma pista premium de dança" class="detalhes__card-img">
                     </picture>
                     <div class="detalhes__card-info">
                         <h2 class="detalhes__card-info-titulo">Pista Premium</h2>
@@ -72,8 +69,8 @@
                 </div>
                 <div class="detalhes__card">
                     <picture>
-                        <source srcset="../img/cadeiras-tablet.png" media="(min-width: 768px)">
-                        <img src="../img/cadeiras.png" alt="Imagem de cadeiras de arquibancada" class="detalhes__card-img">
+                        <source srcset="../assets/img/cadeiras-tablet.png" media="(min-width: 768px)">
+                        <img src="../assets/img/cadeiras.png" alt="Imagem de cadeiras de arquibancada" class="detalhes__card-img">
                     </picture>
                     <div class="detalhes__card-info">
                         <h2 class="detalhes__card-info-titulo">Cadeiras</h2>
@@ -85,7 +82,7 @@
     </main>
     <footer class="footer">
     <div class="footer__contato">
-        <img src="../img/Logo-escuro.svg" alt="Logo da Cochella" class="footer__contato-logo">
+        <img src="../assets/img/Logo-escuro.svg" alt="Logo da Cochella" class="footer__contato-logo">
         <p class="footer__socialMedia">Acesse nossas redes: 
             <span class="footer__links">
                 <i class="fa-brands fa-instagram"></i>
@@ -100,5 +97,6 @@
             Projeto fictício sem fins comerciais.</p>
     </div>
     </footer>
+    <script src="../scripts/menu.js"></script>
 </body>
 </html>
