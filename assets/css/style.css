@@ -527,21 +527,22 @@ body {
     padding: 32px 120px;
   }
   .mapa__img {
-    width: 590px;
-    height: 590px;
+    width: 450px;
+    height: 450px;
   }
   .detalhes {
-    padding: 32px 60px;
+    padding: 48px 120px;
+    display: flex;
+    flex-direction: column;
   }
-  .detalhes__titulo {
-    font-size: 40px;
+  .detalhes__card-section {
+    height: 631px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
   }
-  .detalhes__card {
-    padding: 32px 0 0;
-  }
-  .detalhes__card-img {
-    width: 382.4px;
-    height: 239px;
+  .detalhes__card:nth-child(2) {
+    align-self: flex-end;
   }
 }
 

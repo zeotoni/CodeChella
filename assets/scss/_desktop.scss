@@ -90,27 +90,28 @@
         padding: 32px 120px;
 
         &__img {
-            width: 590px;
-            height: 590px;
+            width: 450px;
+            height: 450px;
         }
 
     }
 
     .detalhes {
 
-        padding: 32px 60px;
+        padding: 48px 120px;
+        display: flex;
+        flex-direction: column;
+        
+        &__card-section {
+            height: 631px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
 
-        &__titulo {
-            font-size: 40px;
         }
-
-        &__card {
-            padding: 32px 0 0;
-
-            &-img {
-                width: 382.4px;
-                height: 239px;  
-            }
+        
+        &__card:nth-child(2) {
+            align-self: flex-end;
         }
     }
 }
