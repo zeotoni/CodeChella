@@ -18,13 +18,17 @@
    <header class="header">
     <div class="header__container">
         <a href="./index.html"><img src="./assets/img/Logo-branco.svg" alt="Logo da CodeChella" class="header__img"></a>
-        <ul class="header__list menu-hamb" data-lista>
+        <input class="header__container-check" type="checkbox" id="menu">
+        <label for="menu">
+            <span><img src="./assets/img/menu.svg" alt="ícone de menu hamburguer" class="header__container-menu-hmb"></span>
+        </label>
+        <span class="material-icons menu-mobile-close">close</span>
+        <ul class="header__list menu-hamb">
             <li class="header__list-item"><a href="./assets/pages/experiencia.html">A experiência</a></li>
             <li class="header__list-item"><a href="./assets/pages/mapaDeSetores.html">Mapa de Setores</a></li>
             <li class="header__list-item"><a href="#">Informações</a></li>
             <li class="header__list-item"><a href="#">Ingresso</a></li>
         </ul>
-        <img src="./assets/img/menu.svg" alt="ícone de menu hamburguer" class="header__menu-hmb" data-menu>
     </div>
    </header>
    <main>
@@ -32,7 +36,10 @@
         <h1 class="banner__titulo">Boas-vindas ao #CodeChella2023!</h1>
     </section>
     <section class="sobre">
-        <img src="./assets/img/festa.png" alt="Imagem de pessoas num festival" class="sobre__img">
+        <picture>
+            <source srcset="./assets/img/festa.png" media="(min-width: 768px)">
+            <img src="./assets/img/festa-mobile.png" alt="Imagem de pessoas num festival" class="sobre__img">
+        </picture>
         <div class="sobre__info">
             <h2 class="sobre__titulo">< 11 e 12 de Março ><br>
                 Aluródromo de São Paulo</h2>

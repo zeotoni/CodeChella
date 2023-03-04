@@ -8,6 +8,15 @@
             margin: 0 auto;
             padding: 32px 0;
             justify-content: space-between;
+            align-items: center;
+            
+            &-check {
+                display: none;
+            }
+
+            &-menu-hmb {
+                display: block;
+            }
         }
 
         &__img {
@@ -16,13 +25,19 @@
         }
 
         &__list {
-            display: flex;
+            display: none;
         }
 
-        &__menu-hmb {
-            display: block;
+        .menu-mobile-close {
+            color: $branco-principal;
+            display: none;
         }
     }
+
+    .header__container-check:checked~.header__list {
+        display: flex;
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -34,6 +49,10 @@
             display: block;
             text-align: center;
             padding: 16px 0;
+
+            &-menu-hmb {
+                display: none;
+            }
         }
 
         &__list {
