@@ -18,12 +18,15 @@
    <header class="header">
     <div class="header__container">
         <a href="./index.html"><img src="./assets/img/Logo-branco.svg" alt="Logo da CodeChella" class="header__img"></a>
-        <input class="header__container-check" type="checkbox" id="menu">
+        <!-- <input class="header__container-check" type="checkbox" id="menu">
         <label for="menu">
-            <span><img src="./assets/img/menu.svg" alt="ícone de menu hamburguer" class="header__container-menu-hmb"></span>
-        </label>
-        <span class="material-icons menu-mobile-close">close</span>
-        <ul class="header__list menu-hamb">
+            <span></span>
+        </label> -->
+        <!-- <img src="./assets/img/menu.svg" alt="ícone de menu hamburguer" class="header__container-menu-hmb" data-menu-abrir> -->
+        <!-- <span class="material-icons menu-mobile">menu</span>
+        <span class="material-icons menu-mobile" data-menu-mobile>close</span> -->
+        <button type="button" data-btn-menu class="header__menu-mobile"></button>
+        <ul class="header__list hidden" data-ul-mobile>
             <li class="header__list-item"><a href="./assets/pages/experiencia.html">A experiência</a></li>
             <li class="header__list-item"><a href="./assets/pages/mapaDeSetores.html">Mapa de Setores</a></li>
             <li class="header__list-item"><a href="#">Informações</a></li>
@@ -106,5 +109,30 @@
             Projeto fictício sem fins comerciais.</p>
     </div>
     </footer>
+    <script>
+        // const menuH = document.querySelector('[data-menu-abrir]')
+        // const menuClose = document.querySelector('[data-menu-fechar]')
+        
+        // menuH.onclick = () => {
+        //     menuH.classList.toggle('hidden')
+        //     menuClose.classList.toggle('hidden')
+        //     menuMobile.classList.toggle('hidden')
+        // }
+        
+        // menuClose.onclick = () => {
+            //     menuH.classList.toggle('hidden')
+            //     menuClose.classList.toggle('hidden')
+            //     menuMobile.classList.toggle('hidden')
+            // }
+            
+        const btnMenu = document.querySelector('[data-btn-menu]'); 
+        const menuMobile = document.querySelector('[data-ul-mobile]');
+
+        btnMenu.onclick = () => {
+            menuMobile.classList.toggle('hidden');
+            btnMenu.dataset.btnMenu == "fechar" ? btnMenu.dataset.btnMenu = "" : btnMenu.dataset.btnMenu = "fechar";
+        }
+
+    </script>
 </body>
 </html>
