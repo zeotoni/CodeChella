@@ -26,6 +26,7 @@ body {
 
 .material-icons {
   font-size: 28px;
+  color: #FFFFFF;
 }
 
 .header__list {
@@ -380,6 +381,42 @@ body {
     font-weight: 500;
     line-height: 40px;
   }
+  .banner-informacoes {
+    background-image: url(../img/Banner\ -\ Infos\ gerais.png);
+  }
+  .perguntas {
+    text-align: center;
+    color: #444444;
+    padding: 48px 24px;
+  }
+  .perguntas__titulo {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Calistoga", cursive;
+    padding-bottom: 48px;
+  }
+  .perguntas__frequentes {
+    font-family: "Raleway", sans-serif;
+    text-align: initial;
+    padding-bottom: 8px;
+  }
+  .perguntas__frequentes-pergunta {
+    color: #FFFFFF;
+    background-color: #2E7BA2;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  .perguntas__frequentes-resposta {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    background-color: #C8DEEF;
+    padding: 16px;
+  }
 }
 @media screen and (min-width: 768px) {
   .banner {
@@ -480,6 +517,15 @@ body {
     width: 382.4px;
     height: 239px;
   }
+  .banner-informacoes {
+    background-image: url(../img/Banner-info-tablet.png);
+  }
+  .perguntas {
+    padding: 48px 60px;
+  }
+  .perguntas__titulo {
+    font-size: 48px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .banner {
@@ -561,6 +607,18 @@ body {
   }
   .detalhes__card:nth-child(2) {
     align-self: flex-end;
+  }
+  .banner-informacoes {
+    background-image: url(../img/Banner-info-desktop.png);
+  }
+  .perguntas {
+    padding: 48px 222px;
+  }
+  .perguntas__titulo {
+    font-size: 48px;
+  }
+  .perguntas__frequentes-pergunta span {
+    cursor: pointer;
   }
 }
 

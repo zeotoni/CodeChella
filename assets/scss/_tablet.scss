@@ -132,4 +132,18 @@
             }
         }
     }
+
+    // ....Informações Gerais...
+
+    .banner-informacoes {
+        background-image: url(../img/Banner-info-tablet.png);
+    }
+
+    .perguntas {
+        padding: 48px 60px;
+
+        &__titulo {
+            font-size: 48px;
+        }
+    }
 }

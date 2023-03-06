@@ -81,7 +81,7 @@
         flex-direction: row-reverse;
     }
 
-     // .....Mapa de Setores.....
+    // .....Mapa de Setores.....
 
     .banner-setores {
         background-image: url(../img/Banner-setores-desktop.png);
@@ -116,6 +116,24 @@
         
         &__card:nth-child(2) {
             align-self: flex-end;
+        }
+    }
+
+    // ....Informações Gerais...
+
+    .banner-informacoes {
+        background-image: url(../img/Banner-info-desktop.png);
+    }
+
+    .perguntas {
+        padding: 48px 222px;
+
+        &__titulo {
+            font-size: 48px;
+        }
+
+        &__frequentes-pergunta span {
+            cursor: pointer;
         }
     }
 }
