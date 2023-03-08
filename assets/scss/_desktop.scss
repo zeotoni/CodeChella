@@ -136,4 +136,26 @@
             cursor: pointer;
         }
     }
+
+    // ....Ingresso...
+
+    .banner-ingresso {
+        background-image: url(../img/Banner-ingresso-desktop.png);
+    }
+
+    .formulario {
+        padding: 48px 322.5px;
+
+        &__form div:nth-child(3) {
+            display: inline-block;
+            width: 385.5px;
+        }
+
+        &__form div:nth-child(4) {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 385.5px;
+        }
+    }
+
 }

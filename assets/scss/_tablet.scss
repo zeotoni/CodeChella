@@ -146,4 +146,29 @@
             font-size: 48px;
         }
     }
+
+    // ....Ingresso...
+
+    .banner-ingresso {
+        background-image: url(../img/Banner-ingresso-tablet.png);
+    }
+
+    .formulario {
+        padding: 48px 60px;
+
+        &__titulo {
+            font-size: 48px;
+        }
+
+        &__form {
+
+            &-input {
+                height: 56px;
+            }
+
+            &-input[type="date"] {
+               width: 453px;
+            }
+        }
+    }
 }

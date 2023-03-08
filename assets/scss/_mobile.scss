@@ -256,4 +256,70 @@
             }
         }
     }
+
+    // ....Ingresso...
+
+    .banner-ingresso {
+        background-image: url(../img/Banner\ -ingresso.png);
+    }
+
+    .formulario {
+        text-align: center;
+        padding: 32px 24px;
+        color: $font-color;
+
+        &__titulo {
+            font-family: $font-titulo;
+            font-size: 32px;
+            font-weight: 400;
+            padding-bottom: 48px;
+        }
+
+        &__form {
+            text-align: justify;
+            font-family: $font-texto;
+
+            &-label {
+                display: block;
+                font-size: 32px;
+                font-weight: 700;
+                padding-bottom: 8px;
+            }
+            
+            &-input {
+                background-color: $branco-principal;
+                width: 100%;
+                height: 48px;
+                border: none;
+                margin-bottom: 32px;
+                box-sizing: border-box;
+                padding: 10px;
+                font-size: 20px;
+                color: $font-color;
+                
+                &::placeholder {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+
+            .select {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background: url(../img/arrow_drop_down.svg) no-repeat center right;
+                background-color: $branco-principal;
+                background-size: 32px;
+            }
+
+            &-btn {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              padding: 8px 18px;
+              margin: 0 auto;
+              border: none;
+            }
+        }
+    }
 }

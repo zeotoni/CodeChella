@@ -417,6 +417,61 @@ body {
     background-color: #C8DEEF;
     padding: 16px;
   }
+  .banner-ingresso {
+    background-image: url(../img/Banner\ -ingresso.png);
+  }
+  .formulario {
+    text-align: center;
+    padding: 32px 24px;
+    color: #444444;
+  }
+  .formulario__titulo {
+    font-family: "Calistoga", cursive;
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 48px;
+  }
+  .formulario__form {
+    text-align: justify;
+    font-family: "Raleway", sans-serif;
+  }
+  .formulario__form-label {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+  .formulario__form-input {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 48px;
+    border: none;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 20px;
+    color: #444444;
+  }
+  .formulario__form-input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .formulario__form .select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../img/arrow_drop_down.svg) no-repeat center right;
+    background-color: #FFFFFF;
+    background-size: 32px;
+  }
+  .formulario__form-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 18px;
+    margin: 0 auto;
+    border: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .banner {
@@ -526,6 +581,21 @@ body {
   .perguntas__titulo {
     font-size: 48px;
   }
+  .banner-ingresso {
+    background-image: url(../img/Banner-ingresso-tablet.png);
+  }
+  .formulario {
+    padding: 48px 60px;
+  }
+  .formulario__titulo {
+    font-size: 48px;
+  }
+  .formulario__form-input {
+    height: 56px;
+  }
+  .formulario__form-input[type=date] {
+    width: 453px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .banner {
@@ -619,6 +689,21 @@ body {
   }
   .perguntas__frequentes-pergunta span {
     cursor: pointer;
+  }
+  .banner-ingresso {
+    background-image: url(../img/Banner-ingresso-desktop.png);
+  }
+  .formulario {
+    padding: 48px 322.5px;
+  }
+  .formulario__form div:nth-child(3) {
+    display: inline-block;
+    width: 385.5px;
+  }
+  .formulario__form div:nth-child(4) {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 385.5px;
   }
 }
 
