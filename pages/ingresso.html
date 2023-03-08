@@ -42,18 +42,20 @@
                     <label for="email" class="formulario__form-label">Email</label>
                     <input type="email" class="formulario__form-input" placeholder="Digite seu email" required>
                 </div>
-                <div>
-                    <label for="tipo-de-ingresso" class="formulario__form-label">Tipo de Ingresso</label>
-                    <select name="tipo-de-ingresso" required class="formulario__form-input select">
-                        <span class="material-icons">arrow_drop_down</span>
-                        <option value="Setor Pista Comum">Setor Pista Comum</option>
-                        <option value="Setor Pista Premium">Setor Pista Premium</option>
-                        <option value="Setor Cadeiras">Setor Cadeiras</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="date" class="formulario__form-label">Data de Nascimento</label>
-                    <input type="date"class="formulario__form-input" required >
+                <div class="formulario__form-seletores">
+                    <div class="formulario__form-seletores-select">
+                        <label for="tipo-de-ingresso" class="formulario__form-label">Tipo de Ingresso</label>
+                        <select name="tipo-de-ingresso" required class="formulario__form-input select">
+                            <span class="material-icons">arrow_drop_down</span>
+                            <option value="Setor Pista Comum">Setor Pista Comum</option>
+                            <option value="Setor Pista Premium">Setor Pista Premium</option>
+                            <option value="Setor Cadeiras">Setor Cadeiras</option>
+                        </select>
+                    </div>
+                    <div class="formulario__form-seletores-data">
+                        <label for="date" class="formulario__form-label">Data de Nascimento</label>
+                        <input type="date"class="formulario__form-input" required >
+                    </div>
                 </div>
                 <div>
                     <button type="submit" class="btn formulario__form-btn">Avançar!<span class="material-icons">arrow_forward</span></button>

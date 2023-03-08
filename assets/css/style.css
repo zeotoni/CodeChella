@@ -696,14 +696,28 @@ body {
   .formulario {
     padding: 48px 322.5px;
   }
-  .formulario__form div:nth-child(3) {
-    display: inline-block;
-    width: 385.5px;
+  .formulario__form {
+    display: flex;
+    flex-direction: column;
   }
-  .formulario__form div:nth-child(4) {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 385.5px;
+  .formulario__form-seletores {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+  }
+  .formulario__form-seletores-select {
+    width: 50%;
+  }
+  .formulario__form-seletores-data {
+    width: 50%;
+  }
+  .formulario__form-input[type=date] {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .formulario__form-btn:hover {
+    cursor: pointer;
   }
 }
 

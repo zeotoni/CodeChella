@@ -145,16 +145,36 @@
 
     .formulario {
         padding: 48px 322.5px;
+  
+        
+        &__form {
 
-        &__form div:nth-child(3) {
-            display: inline-block;
-            width: 385.5px;
-        }
+            display: flex;
+            flex-direction: column;
 
-        &__form div:nth-child(4) {
-            display: inline-block;
-            box-sizing: border-box;
-            width: 385.5px;
+            &-seletores {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                justify-content: center;
+
+                &-select {
+                    width: 50%;
+                }
+
+                &-data {
+                    width: 50%;
+                }
+            }
+            
+            &-input[type="date"] {
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            &-btn:hover {
+                cursor: pointer;
+            }
         }
     }
 
