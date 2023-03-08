@@ -303,6 +303,12 @@
                 }
             }
 
+            &-input[type="date"] {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+
             .select {
                 appearance: none;
                 -webkit-appearance: none;
@@ -319,6 +325,61 @@
               padding: 8px 18px;
               margin: 0 auto;
               border: none;
+            }
+        }
+    }
+
+    // ...Ingresso comprado....
+
+    .banner-ingresso-comprado {
+        background-image: url(../img/Banner\ -\ ingresso-comprado.png);
+    }
+
+    .ingresso {
+        padding: 64px 24px;
+        text-align: center;
+        color: $font-color;
+        font-family: $font-texto;
+
+        &__mensagem {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 37.57px;
+            padding-bottom: 32px;
+        }
+
+        &__card {
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+            background: linear-gradient($azul-claro, $salmao-claro, $salmao);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            &-logos {
+               display: flex;
+               justify-content: space-between;
+            }
+
+            &-img {
+                width: 248px;
+                height: 190px;
+                margin: 0 auto;
+            }
+
+            &-info {
+
+                &-nome {
+                    font-size: 32px;
+                    font-weight: 700;
+                    padding-bottom: 16px;
+                }
+
+                & p {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 40px;
+                }
             }
         }
     }

@@ -456,6 +456,11 @@ body {
     font-size: 20px;
     font-weight: 500;
   }
+  .formulario__form-input[type=date] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
   .formulario__form .select {
     appearance: none;
     -webkit-appearance: none;
@@ -471,6 +476,48 @@ body {
     padding: 8px 18px;
     margin: 0 auto;
     border: none;
+  }
+  .banner-ingresso-comprado {
+    background-image: url(../img/Banner\ -\ ingresso-comprado.png);
+  }
+  .ingresso {
+    padding: 64px 24px;
+    text-align: center;
+    color: #444444;
+    font-family: "Raleway", sans-serif;
+  }
+  .ingresso__mensagem {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37.57px;
+    padding-bottom: 32px;
+  }
+  .ingresso__card {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(#C8DEEF, #FBF0DD, #FACF9D);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .ingresso__card-logos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ingresso__card-img {
+    width: 248px;
+    height: 190px;
+    margin: 0 auto;
+  }
+  .ingresso__card-info-nome {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 16px;
+  }
+  .ingresso__card-info p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
   }
 }
 @media screen and (min-width: 768px) {
