@@ -304,9 +304,9 @@
             }
 
             &-input[type="date"] {
-                appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
+                // appearance: none;
+                // -webkit-appearance: none;
+                // -moz-appearance: none;
             }
 
             .select {
@@ -362,7 +362,7 @@
             }
 
             &-img {
-                width: 248px;
+                width: 185px;
                 height: 190px;
                 margin: 0 auto;
             }

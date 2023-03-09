@@ -456,11 +456,6 @@ body {
     font-size: 20px;
     font-weight: 500;
   }
-  .formulario__form-input[type=date] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
   .formulario__form .select {
     appearance: none;
     -webkit-appearance: none;
@@ -505,7 +500,7 @@ body {
     justify-content: space-between;
   }
   .ingresso__card-img {
-    width: 248px;
+    width: 185px;
     height: 190px;
     margin: 0 auto;
   }
@@ -643,6 +638,19 @@ body {
   .formulario__form-input[type=date] {
     width: 453px;
   }
+  .banner-ingresso-comprado {
+    background-image: url(../img/Banner-ingresso-comprado-tablet.png);
+  }
+  .ingresso {
+    padding: 64px 60px;
+  }
+  .ingresso__mensagem {
+    padding: 0 32px 32px;
+  }
+  .ingresso__card-img {
+    width: 285px;
+    height: 310px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .banner {
@@ -765,6 +773,51 @@ body {
   }
   .formulario__form-btn:hover {
     cursor: pointer;
+  }
+  .banner-ingresso-comprado {
+    background-image: url(../img/Banner-ingresso-comprado-desk.png);
+  }
+  .ingresso {
+    padding: 64px 120px;
+  }
+  .ingresso__mensagem {
+    padding: 0 64px 32px;
+  }
+  .ingresso__mensagem br {
+    display: none;
+  }
+  .ingresso__card {
+    display: grid;
+    margin: 0 auto;
+    width: 792px;
+    height: 286px;
+    grid-template-columns: 25% 28% 39%;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
+    align-items: end;
+  }
+  .ingresso__card-logos {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .ingresso__card-img {
+    width: 189px;
+    height: 222px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .ingresso__card-info {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .ingresso__card-info-nome {
+    padding-bottom: 32px;
   }
 }
 
