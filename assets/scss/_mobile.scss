@@ -304,9 +304,6 @@
             }
 
             &-input[type="date"] {
-                appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
                 background: url(../img/calendar.svg) no-repeat center right;
                 background-color: $branco-principal;
                 background-size: 20px;
