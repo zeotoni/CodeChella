@@ -456,6 +456,15 @@ body {
     font-size: 20px;
     font-weight: 500;
   }
+  .formulario__form-input[type=date] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../img/calendar.svg) no-repeat center right;
+    background-color: #FFFFFF;
+    background-size: 20px;
+    background-position: 97%;
+  }
   .formulario__form .select {
     appearance: none;
     -webkit-appearance: none;
