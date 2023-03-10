@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeChella</title>
+    <link rel="icon" href="../assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
         <div class="header__container">
             <a href="../../index.html"><img src="../assets/img/Logo-branco.svg" alt="Logo da CodeChella" class="header__img"></a>
             <button type="button" data-btn-menu class="header__menu-mobile"></button>
-            <ul class="header__list hidden" data-ul-mobile>
+            <ul class="header__list" data-ul-mobile>
                 <li class="header__list-item"><a href="./experiencia.html">A experiência</a></li>
                 <li class="header__list-item"><a href="./mapaDeSetores.html">Mapa de Setores</a></li>
                 <li class="header__list-item"><a href="./informacoes.html">Informações</a></li>
@@ -47,14 +48,16 @@
                         <label for="tipo-de-ingresso" class="formulario__form-label">Tipo de Ingresso</label>
                         <select name="tipo-de-ingresso" required class="formulario__form-input select">
                             <span class="material-icons">arrow_drop_down</span>
+                            <option>Tipo de ingresso</option>
                             <option value="Setor Pista Comum">Setor Pista Comum</option>
                             <option value="Setor Pista Premium">Setor Pista Premium</option>
-                            <option value="Setor Cadeiras">Setor Cadeiras</option>
+                            <option value="Setor Cadeiras Térreo">Setor Cadeiras</option>
+                            <option value="Setor Cadeiras Superiores">Setor Cadeiras Superiores</option>
                         </select>
                     </div>
                     <div class="formulario__form-seletores-data">
                         <label for="date" class="formulario__form-label">Data de Nascimento</label>
-                        <input type="date" min="2023-03-11" max="2023-03-12" class="formulario__form-input" required >
+                        <input type="date" class="formulario__form-input" required >
                     </div>
                 </div>
                 <div>

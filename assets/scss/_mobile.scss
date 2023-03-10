@@ -3,7 +3,8 @@
     // ......index.html......
 
     .banner-home {
-        background-image: url(../img/Banner.png);
+        background-image: url(../img/banner-index-header.png);
+        background-attachment: fixed;
     }
 
     .sobre {
@@ -105,9 +106,9 @@
 
         &__img {
             height: 338px;
-            margin: 0 auto;
-            width: 360px;
-            background-image: url(../img/rodape-mobile.png);
+            width: 100%;
+            mix-blend-mode: multiply;
+            background-image: url(../img/banner-rodape-desktop.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -245,6 +246,8 @@
                 align-items: center;
                 justify-content: space-between;
                 padding: 16px;
+                cursor: pointer;
+                transition: 0.4s;
             }
 
             &-resposta {
@@ -252,7 +255,10 @@
                 font-weight: 500;
                 line-height: 40px;
                 background-color: $azul-claro;
-                padding: 16px;
+                padding: 0 16px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease-out;
             }
         }
     }
@@ -302,14 +308,6 @@
                     font-weight: 500;
                 }
             }
-
-            // &-input[type="date"] {
-            //     background: url(../img/calendar.svg) no-repeat center right;
-            //     background-color: $branco-principal;
-            //     background-size: 20px;
-            //     background-position: 97%;
-            // }
-
 
             .select {
                 appearance: none;

@@ -57,6 +57,7 @@
             position: unset;
             justify-content: center;
             gap: 32px;
+            max-width: unset;
 
             &-item::after {
                 display: none;

@@ -43,8 +43,10 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  padding: 24px 16px;
   list-style: none;
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 0.5s ease-out;
 }
 .header__list-item {
   padding: 16px 0;
@@ -73,6 +75,7 @@ body {
   background-position: center;
   height: 270px;
   display: flex;
+  background-attachment: fixed;
 }
 .banner__titulo {
   text-align: center;
@@ -133,6 +136,7 @@ body {
     position: unset;
     justify-content: center;
     gap: 32px;
+    max-width: unset;
   }
   .header__list-item::after {
     display: none;
@@ -217,7 +221,8 @@ body {
 }
 @media screen and (min-width: 0) {
   .banner-home {
-    background-image: url(../img/Banner.png);
+    background-image: url(../img/banner-index-header.png);
+    background-attachment: fixed;
   }
   .sobre {
     text-align: center;
@@ -303,9 +308,9 @@ body {
   }
   .programacao__img {
     height: 338px;
-    margin: 0 auto;
-    width: 360px;
-    background-image: url(../img/rodape-mobile.png);
+    width: 100%;
+    mix-blend-mode: multiply;
+    background-image: url(../img/banner-rodape-desktop.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -413,13 +418,18 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+    cursor: pointer;
+    transition: 0.4s;
   }
   .perguntas__frequentes-resposta {
     font-size: 20px;
     font-weight: 500;
     line-height: 40px;
     background-color: #C8DEEF;
-    padding: 16px;
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
   }
   .banner-ingresso {
     background-image: url(../img/Banner\ -ingresso.png);
@@ -580,11 +590,6 @@ body {
     position: absolute;
     top: -7px;
   }
-  .programacao__img {
-    width: 100%;
-    height: 338px;
-    background-image: url(../img/rodape-img-tablet.png);
-  }
   .banner-exp {
     background-image: url(../img/Banner-exp-tablet.png);
   }
@@ -688,7 +693,7 @@ body {
     right: -350px;
   }
   .programacao__img {
-    background-image: url(../img/rodape-img.png);
+    height: 407px;
   }
   .experiencia {
     display: flex;
