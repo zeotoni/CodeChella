@@ -19,10 +19,15 @@ body {
     display: none;
 }
 
-.anima {
-    transform: 1s;
+.input-mensagem-erro {
+    font-family: $font-texto;
+    color: red;
 }
 
+.input-container__invalido .formulario__form-input{
+    border: 2px solid red;
+    border-radius: 5px;
+}
 
 
 
