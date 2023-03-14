@@ -9,6 +9,7 @@ body {
 .input-mensagem-erro {
   font-family: "Raleway", sans-serif;
   color: red;
+  padding: 10px;
 }
 
 .input-container__invalido .formulario__form-input {

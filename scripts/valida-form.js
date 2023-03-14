@@ -1,4 +1,5 @@
 export const valida = (input) => {
+
     const tipoDeInput = input.dataset.tipo;
 
     if(validadores[tipoDeInput]) {
@@ -8,11 +9,9 @@ export const valida = (input) => {
     if (input.validity.valid) {
         input.parentElement.classList.remove('input-container__invalido')
         input.parentElement.querySelector('.input-mensagem-erro').innerHTML = '';
-        input.nextElementSibling.style.padding = 0;
     } else {
         input.parentElement.classList.add('input-container__invalido')
         input.parentElement.querySelector('.input-mensagem-erro').innerHTML = mostraMsgErro(tipoDeInput, input);
-        input.nextElementSibling.style.padding = '10px';
     }
 }
 
@@ -39,6 +38,9 @@ const mensagemDeErro = {
     data: {
         valueMissing: 'O campo de data não pode estar vazio.',
         customError: ''
+    },
+    dataEvento: {
+        customError: 'É necessário escolher uma data para o evento'
     }
 }
 
@@ -56,7 +58,8 @@ const mostraMsgErro = (tipoDeInput, input) => {
 
 const validadores = {
     data:input => validaDataNascimento(input),
-    tipoIngresso:input => validaSelect(input)
+    tipoIngresso:input => validaSelect(input),
+    dataEvento:input => validaSelect(input)
 }
 
 const validaSelect = (input) => {
@@ -66,24 +69,32 @@ const validaSelect = (input) => {
         msg = 'É necessário selecionar um tipo de ingresso.'
     }
 
+    if(input.value === 'Escolha uma data') {
+        msg = 'É necessário escolher uma data para o evento.'
+    }
+
     input.setCustomValidity(msg)
 }
 
 const validaDataNascimento = (input) => {
-    const dataRecebida = new Date(input.value);
 
-    let msg = '';
+    const dataRecebida = new Date(input.value);
+    let msg = "";
 
     if(!maiorQue10(dataRecebida)) {
         msg = 'Menores de 10 anos não são permitidos no festival.'
     }
-
+    
     if(maiorQue10(dataRecebida) && menorQue16(dataRecebida)) {
-        msg = 'Você só poderá entrar acompanhado de um adulto!'
+        const p = document.createElement('p')
+        input.parentElement.appendChild(p)
+        p.className = 'input-mensagem-erro'
+        p.textContent= 'Devido à sua idade, você só pode entrar acompanhado de um adulto';
     }
 
-    mensagemDeErro.data.customError = msg
+    mensagemDeErro.data.customError = msg;
     input.setCustomValidity(msg)
+    
 }
 
 const maiorQue10 = (data) => {
@@ -99,5 +110,6 @@ const menorQue16 = (data) => {
 
     return dataMenos16 >= dataAtual;
 }
+
 
 
