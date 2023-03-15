@@ -54,6 +54,7 @@ body {
   max-width: 0;
   overflow: hidden;
   transition: max-width 0.5s ease-out;
+  z-index: 10;
 }
 .header__list-item {
   padding: 16px 0;
@@ -81,8 +82,9 @@ body {
   background-size: cover;
   background-position: center;
   height: 270px;
+  width: 100%;
+  position: relative;
   display: flex;
-  background-attachment: fixed;
 }
 .banner__titulo {
   text-align: center;
@@ -92,6 +94,43 @@ body {
   margin: 0 auto;
   font-family: "Calistoga", cursive;
   align-self: center;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.modal {
+  width: 270px;
+  height: 160px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  padding: 24px;
+  color: red;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  box-shadow: 4px 4px 0px #444444;
+  border-radius: 16px;
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  background-image: linear-gradient(#C8DEEF, #FBF0DD, #FACF9D);
+  display: flex;
+}
+.modal__btn {
+  padding: 0;
+  margin: 0 87px;
+}
+.modal__btn:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 0) {
@@ -227,19 +266,20 @@ body {
   }
 }
 @media screen and (min-width: 0) {
-  .banner-home {
+  .banner::before {
     background-image: url(../img/banner-index-header.png);
-    background-attachment: fixed;
   }
   .sobre {
     text-align: center;
     margin: 0 auto;
-    padding: 32px 0;
+    padding: 32px 24px;
     font-family: "Raleway", sans-serif;
     color: #444444;
   }
   .sobre__img {
-    width: 312px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
     height: 381px;
   }
   .sobre__info {
@@ -325,14 +365,20 @@ body {
     background-position: center;
     background-attachment: fixed;
   }
-  .banner-exp {
-    background-image: url(../img/Banner-exp.png);
+  .banner-exp::before {
+    background-image: url(../img/banner-exp.jpeg);
   }
   .experiencia {
     text-align: center;
     padding: 32px 24px;
     font-family: "Raleway", sans-serif;
     color: #444444;
+  }
+  .experiencia__img {
+    width: 100%;
+    height: 381px;
+    object-fit: cover;
+    border-radius: 15px;
   }
   .experiencia__info {
     padding: 32px 8px 0;
@@ -346,8 +392,9 @@ body {
     font-size: 20px;
     line-height: 40px;
   }
-  .banner-setores {
-    background-image: url(../img/Banner-setores.png);
+  .banner-setores::before {
+    background-image: url(../img/banner-setores.jpeg);
+    background-position: bottom;
   }
   .mapa {
     padding-bottom: 32px;
@@ -387,6 +434,12 @@ body {
   .detalhes__card {
     padding: 32px 0;
   }
+  .detalhes__card-img {
+    width: 100%;
+    height: 239px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
   .detalhes__card-info {
     padding-top: 24px;
   }
@@ -400,8 +453,8 @@ body {
     font-weight: 500;
     line-height: 40px;
   }
-  .banner-informacoes {
-    background-image: url(../img/Banner\ -\ Infos\ gerais.png);
+  .banner-informacoes::before {
+    background-image: url(../img/banner-informacoes.jpeg);
   }
   .perguntas {
     text-align: center;
@@ -441,8 +494,9 @@ body {
     overflow: hidden;
     transition: max-height 0.4s ease-out;
   }
-  .banner-ingresso {
-    background-image: url(../img/Banner\ -ingresso.png);
+  .banner-ingresso::before {
+    background-image: url(../img/banner-ingresso.jpeg);
+    background-position: bottom;
   }
   .formulario {
     text-align: center;
@@ -495,8 +549,8 @@ body {
     margin: 41px auto 0;
     border: none;
   }
-  .banner-ingresso-comprado {
-    background-image: url(../img/Banner\ -\ ingresso-comprado.png);
+  .banner-ingresso-comprado::before {
+    background-image: url(../img/banner-ingresso-comprado.jpeg);
   }
   .ingresso {
     padding: 64px 24px;
@@ -547,7 +601,6 @@ body {
     padding: 0 15%;
   }
   .sobre__img {
-    width: 609px;
     height: 381px;
   }
   .sobre__texto {
@@ -599,21 +652,11 @@ body {
     position: absolute;
     top: -7px;
   }
-  .banner-exp {
-    background-image: url(../img/Banner-exp-tablet.png);
-  }
   .experiencia {
     padding: 32px 60px;
   }
-  .experiencia__img {
-    width: 609px;
-    height: 381px;
-  }
   .experiencia__info {
     padding: 32px calc(19% - 114px) 0;
-  }
-  .banner-setores {
-    background-image: url(../img/Banner-setores-tablet.png);
   }
   .mapa {
     gap: 32px;
@@ -632,17 +675,11 @@ body {
     width: 382.4px;
     height: 239px;
   }
-  .banner-informacoes {
-    background-image: url(../img/Banner-info-tablet.png);
-  }
   .perguntas {
     padding: 48px 60px;
   }
   .perguntas__titulo {
     font-size: 48px;
-  }
-  .banner-ingresso {
-    background-image: url(../img/Banner-ingresso-tablet.png);
   }
   .formulario {
     padding: 48px 60px;
@@ -655,9 +692,6 @@ body {
   }
   .formulario__form-input[type=date] {
     width: 453px;
-  }
-  .banner-ingresso-comprado {
-    background-image: url(../img/Banner-ingresso-comprado-tablet.png);
   }
   .ingresso {
     padding: 64px 60px;
@@ -724,9 +758,6 @@ body {
   .experiencia:nth-of-type(3) {
     flex-direction: row-reverse;
   }
-  .banner-setores {
-    background-image: url(../img/Banner-setores-desktop.png);
-  }
   .mapa {
     flex-direction: row;
     justify-content: center;
@@ -751,9 +782,6 @@ body {
   .detalhes__card:nth-child(2) {
     align-self: flex-end;
   }
-  .banner-informacoes {
-    background-image: url(../img/Banner-info-desktop.png);
-  }
   .perguntas {
     padding: 48px 222px;
   }
@@ -762,9 +790,6 @@ body {
   }
   .perguntas__frequentes-pergunta span {
     cursor: pointer;
-  }
-  .banner-ingresso {
-    background-image: url(../img/Banner-ingresso-desktop.png);
   }
   .formulario {
     padding: 48px 322.5px;
@@ -791,9 +816,6 @@ body {
   }
   .formulario__form-btn:hover {
     cursor: pointer;
-  }
-  .banner-ingresso-comprado {
-    background-image: url(../img/Banner-ingresso-comprado-desk.png);
   }
   .ingresso {
     padding: 64px 120px;

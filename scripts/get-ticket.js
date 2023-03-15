@@ -1,13 +1,14 @@
 import { valida } from "./valida-form.js";
+import { mostraMenu } from "./menu.js";
 
 const inputNome = document.querySelector('[data-tipo="nome"]');
 const inputEmail = document.querySelector('[data-tipo="email"]');
-const inputData = document.querySelector('[data-tipo="data"]');
+const inputData = document.querySelector('[data-tipo="data"]').value;
 const inputDataEvento = document.querySelector('[data-tipo="dataEvento"]')
 const inputTipoIngresso = document.querySelector('[data-tipo="tipoIngresso"]');
 const form = document.querySelector('[data-form-ingresso]')
 
-export const getTicket = () => {
+const getTicket = () => {
 
     const inputs = document.querySelectorAll('#input');
 
@@ -29,6 +30,12 @@ export const getTicket = () => {
 
         }
 
-        console.log(formValues);
+        localStorage.setItem('dados', JSON.stringify(formValues))
+        window.location.href = './ingresso-comprado.html'
     })
 }
+
+mostraMenu();
+getTicket();
+
+

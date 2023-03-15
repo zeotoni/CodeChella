@@ -86,15 +86,20 @@ const validaDataNascimento = (input) => {
     }
     
     if(maiorQue10(dataRecebida) && menorQue16(dataRecebida)) {
-        const p = document.createElement('p')
-        input.parentElement.appendChild(p)
-        p.className = 'input-mensagem-erro'
-        p.textContent= 'Devido à sua idade, você só pode entrar acompanhado de um adulto';
-    }
+
+        const box = input.parentElement;
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="modal" data-modal>
+                <p class="modal__msg">Atenção!!! Devido à sua idade, você só poderá entrar acompanhado de um adulto!!</p>
+                <button type="button" class="modal__btn btn" onclick="modalClose('[data-modal]')" data-modal-btn>Entendi</button>
+            </div>
+        `
+        box.insertBefore(div, box.firstChild)
+    }   
 
     mensagemDeErro.data.customError = msg;
-    input.setCustomValidity(msg)
-    
+    input.setCustomValidity(msg);
 }
 
 const maiorQue10 = (data) => {
@@ -110,6 +115,8 @@ const menorQue16 = (data) => {
 
     return dataMenos16 >= dataAtual;
 }
+
+
 
 
 

@@ -11,7 +11,7 @@
 
     .sobre {
         &__img {
-            width: 609px;
+            // width: 609px;
             height: 381px;
         }
 
@@ -80,28 +80,15 @@
 
     //.....experiencia.html......
 
-    .banner-exp {
-        background-image: url(../img/Banner-exp-tablet.png);
-    }
-
     .experiencia {
         padding: 32px 60px;
-
-        &__img {
-            width: 609px;
-            height: 381px;
-        }
-
+        
         &__info {
             padding: 32px calc(19% - 114px) 0;
         }
     }
 
      // .....Mapa de Setores.....
-
-    .banner-setores {
-        background-image: url(../img/Banner-setores-tablet.png);
-    }
 
     .mapa {
         gap: 32px;
@@ -129,10 +116,6 @@
 
     // ....Informações Gerais...
 
-    .banner-informacoes {
-        background-image: url(../img/Banner-info-tablet.png);
-    }
-
     .perguntas {
         padding: 48px 60px;
 
@@ -142,10 +125,6 @@
     }
 
     // ....Ingresso...
-
-    .banner-ingresso {
-        background-image: url(../img/Banner-ingresso-tablet.png);
-    }
 
     .formulario {
         padding: 48px 60px;
@@ -168,9 +147,6 @@
 
     // ...Ingresso comprado....
 
-    .banner-ingresso-comprado {
-        background-image: url(../img/Banner-ingresso-comprado-tablet.png);
-    }
 
     .ingresso {
         padding: 64px 60px;

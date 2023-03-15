@@ -2,20 +2,21 @@
 
     // ......index.html......
 
-    .banner-home {
+    .banner::before {
         background-image: url(../img/banner-index-header.png);
-        background-attachment: fixed;
     }
 
     .sobre {
         text-align: center;
         margin: 0 auto;
-        padding: 32px 0;
+        padding: 32px 24px;
         font-family: $font-texto;
         color: $font-color;
 
         &__img {
-            width: 312px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 16px;
             height: 381px;
         }
 
@@ -120,8 +121,8 @@
 
     //.....experiencia.html......
 
-    .banner-exp {
-        background-image: url(../img/Banner-exp.png);
+    .banner-exp::before {
+        background-image: url(../img/banner-exp.jpeg);
     }
 
     .experiencia {
@@ -129,6 +130,13 @@
         padding: 32px 24px;
         font-family: $font-texto;
         color: $font-color;
+
+        &__img {
+            width: 100%;
+            height: 381px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
 
         &__info {
             padding: 32px 8px 0;
@@ -148,8 +156,9 @@
 
     // .....Mapa de Setores.....
 
-    .banner-setores {
-        background-image: url(../img/Banner-setores.png);
+    .banner-setores::before {
+        background-image: url(../img/banner-setores.jpeg);
+        background-position: bottom;
     }
 
     .mapa {
@@ -198,6 +207,13 @@
         &__card {
             padding: 32px 0;
 
+            &-img {
+                width: 100%;
+                height: 239px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
             &-info {
                 padding-top: 24px;
 
@@ -218,8 +234,8 @@
 
     // ....Informações Gerais...
 
-    .banner-informacoes {
-        background-image: url(../img/Banner\ -\ Infos\ gerais.png);
+    .banner-informacoes::before {
+        background-image: url(../img/banner-informacoes.jpeg);
     }
 
     .perguntas {
@@ -268,8 +284,9 @@
 
     // ....Ingresso...
 
-    .banner-ingresso {
-        background-image: url(../img/Banner\ -ingresso.png);
+    .banner-ingresso::before {
+        background-image: url(../img/banner-ingresso.jpeg);
+        background-position: bottom;
     }
 
     .formulario {
@@ -333,8 +350,8 @@
 
     // ...Ingresso comprado....
 
-    .banner-ingresso-comprado {
-        background-image: url(../img/Banner\ -\ ingresso-comprado.png);
+    .banner-ingresso-comprado::before {
+        background-image: url(../img/banner-ingresso-comprado.jpeg);
     }
 
     .ingresso {
