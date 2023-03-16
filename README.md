@@ -18,3 +18,12 @@
 * Validação de formulário personalizada
 * Responsividade 
 * Geração de ingresso dinâmico com dados do formulário
+
+
+<div display="flex">
+  <img src="https://user-images.githubusercontent.com/87879397/225762060-660ab76e-bf62-4dbb-9617-5e059530d15d.png">
+  <img src="https://user-images.githubusercontent.com/87879397/225762041-64451fab-1912-4e53-9859-634a5d8ca85f.png">
+  <img src="https://user-images.githubusercontent.com/87879397/225762069-aba53adc-1283-40f9-a018-0eed6f303478.png">
+  <img src="https://user-images.githubusercontent.com/87879397/225764893-b0343916-19f7-498d-bc25-c5cb9408aaed.png">
+  <img src="https://user-images.githubusercontent.com/87879397/225762055-e519e2f6-4761-4824-afff-4230bddd0bfb.png">
+</div>
