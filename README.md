@@ -29,3 +29,11 @@
   <img src="https://user-images.githubusercontent.com/87879397/225764893-b0343916-19f7-498d-bc25-c5cb9408aaed.png">
   <img src="https://user-images.githubusercontent.com/87879397/225762055-e519e2f6-4761-4824-afff-4230bddd0bfb.png">
 </div>
+
+
+<h2>Acesso ao projeto</h2>
+<p>Para testar acesse: https://code-chella-alpha.vercel.app/</p>
+
+
+
+<br>Desenvolvido por www.linkedin.com/in/zeotoni
