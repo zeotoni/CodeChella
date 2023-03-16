@@ -19,6 +19,8 @@
 * Responsividade 
 * Geração de ingresso dinâmico com dados do formulário
 
+<h2>Imagens do resultado</h2>
+
 
 <div display="flex">
   <img src="https://user-images.githubusercontent.com/87879397/225762060-660ab76e-bf62-4dbb-9617-5e059530d15d.png">
