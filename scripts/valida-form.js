@@ -25,7 +25,7 @@ const tiposDeErro = [
 
 const mensagemDeErro = {
     nome: {
-        valueMissing: 'O campo nome não pode estar vazio.',
+        valueMissing: 'O campo de nome não pode estar vazio.',
         tooShort: 'O nome precisa ter no mínimo, 12 caracteres.'
     },
     email: {
@@ -41,6 +41,9 @@ const mensagemDeErro = {
     },
     dataEvento: {
         customError: 'É necessário escolher uma data para o evento'
+    },
+    setor: {
+        customError: 'É necessário selecionar um setor.'
     }
 }
 
@@ -59,7 +62,8 @@ const mostraMsgErro = (tipoDeInput, input) => {
 const validadores = {
     data:input => validaDataNascimento(input),
     tipoIngresso:input => validaSelect(input),
-    dataEvento:input => validaSelect(input)
+    dataEvento:input => validaSelect(input),
+    setor:input => validaSelect(input)
 }
 
 const validaSelect = (input) => {
@@ -71,6 +75,10 @@ const validaSelect = (input) => {
 
     if(input.value === 'Escolha uma data') {
         msg = 'É necessário escolher uma data para o evento.'
+    }
+
+    if(input.value === 'Escolha um setor') {
+        msg = 'É necessário selecionar um setor.'
     }
 
     input.setCustomValidity(msg)

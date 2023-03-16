@@ -45,15 +45,29 @@
                     <input id="input" type="email" class="formulario__form-input" placeholder="Digite seu email" data-tipo="email" required>
                     <p class="input-mensagem-erro"></p>
                 </div>
-                <div>
-                    <label for="data-evento" class="formulario__form-label">Data do Evento</label>
-                    <select id="input" name="data-evento" required class="formulario__form-input select" data-tipo="dataEvento">
-                            <span class="material-icons">arrow_drop_down</span>
-                            <option>Escolha uma data</option>
-                            <option value="11/03">11/03</option>
-                            <option value="12/03">12/03</option>
-                    </select>
-                    <p class="input-mensagem-erro"></p>
+                <div  class="formulario__form-seletores">
+                    <div class="formulario__form-seletores-select">
+                        <label for="data-evento" class="formulario__form-label">Data do Evento</label>
+                        <select id="input" name="data-evento" required class="formulario__form-input select" data-tipo="dataEvento">
+                                <span class="material-icons">arrow_drop_down</span>
+                                <option>Escolha uma data</option>
+                                <option value="11/03">11/03</option>
+                                <option value="12/03">12/03</option>
+                        </select>
+                        <p class="input-mensagem-erro"></p>
+                    </div>
+                    <div class="formulario__form-seletores-select">
+                        <label for="setor" class="formulario__form-label">Setor</label>
+                        <select id="input" name="setor" required class="formulario__form-input select" data-tipo="setor">
+                                <span class="material-icons">arrow_drop_down</span>
+                                <option>Escolha um setor</option>
+                                <option value="Pista Comum">Setor Pista Comum</option>
+                                <option value="Pista Premium">Setor Pista Premium</option>
+                                <option value="Cadeiras Térreo">Setor Cadeiras</option>
+                                <option value="Cadeiras Superiores">Setor Cadeiras Superiores</option>
+                        </select>
+                        <p class="input-mensagem-erro"></p>
+                    </div>
                 </div>
                 <div class="formulario__form-seletores">
                     <div class="formulario__form-seletores-select">
@@ -61,10 +75,8 @@
                         <select id="input" name="tipo-de-ingresso" required class="formulario__form-input select" data-tipo="tipoIngresso">
                             <span class="material-icons">arrow_drop_down</span>
                             <option>Tipo de ingresso</option>
-                            <option value="Setor Pista Comum">Setor Pista Comum</option>
-                            <option value="Setor Pista Premium">Setor Pista Premium</option>
-                            <option value="Setor Cadeiras Térreo">Setor Cadeiras</option>
-                            <option value="Setor Cadeiras Superiores">Setor Cadeiras Superiores</option>
+                            <option value="Inteira">Entrada Inteira</option>
+                            <option value="Meia-entrada">Meia-entrada</option>
                         </select>
                         <p class="input-mensagem-erro"></p>
                     </div>

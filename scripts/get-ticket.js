@@ -3,10 +3,11 @@ import { mostraMenu } from "./menu.js";
 
 const inputNome = document.querySelector('[data-tipo="nome"]');
 const inputEmail = document.querySelector('[data-tipo="email"]');
-const inputData = document.querySelector('[data-tipo="data"]').value;
+const inputSetor = document.querySelector('[data-tipo="setor"]')
+const inputData = document.querySelector('[data-tipo="data"]');
 const inputDataEvento = document.querySelector('[data-tipo="dataEvento"]')
 const inputTipoIngresso = document.querySelector('[data-tipo="tipoIngresso"]');
-const form = document.querySelector('[data-form-ingresso]')
+const form = document.querySelector('[data-form-ingresso]');
 
 const getTicket = () => {
 
@@ -25,6 +26,7 @@ const getTicket = () => {
             nome: inputNome.value,
             email: inputEmail.value,
             data: inputData.value,
+            setor: inputSetor.value,
             dataEvento: inputDataEvento.value,
             ingresso: inputTipoIngresso.value
 

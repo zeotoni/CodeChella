@@ -111,6 +111,7 @@ body {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
+  line-height: 25px;
   padding: 24px;
   color: red;
   flex-direction: column;
@@ -589,7 +590,7 @@ body {
   .ingresso__card-info p {
     font-weight: 500;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 32px;
   }
 }
 @media screen and (min-width: 768px) {
