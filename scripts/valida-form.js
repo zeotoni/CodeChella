@@ -96,13 +96,20 @@ const validaDataNascimento = (input) => {
     if(maiorQue10(dataRecebida) && menorQue16(dataRecebida)) {
 
         const box = input.parentElement;
-        const div = document.createElement('div')
-        div.innerHTML = `
-            <div class="modal" data-modal>
-                <p class="modal__msg">Atenção!!! Devido à sua idade, você só poderá entrar acompanhado de um adulto!!</p>
-                <button type="button" class="modal__btn btn" onclick="modalClose('[data-modal]')" data-modal-btn>Entendi</button>
-            </div>
-        `
+
+        const div = document.createElement('div');
+        div.className = 'modal';
+        div.id = 'modal';
+        div.innerHTML =  '<p class="modal__msg">Atenção!!! Devido à sua idade, você só poderá entrar acompanhado de um adulto!!</p>';
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'modal__btn btn';
+        btn.innerHTML = 'Entendi';
+
+        btn.addEventListener('click', () => modalClose(div.id))
+        div.appendChild(btn)
+       
         box.insertBefore(div, box.firstChild)
     }   
 
@@ -122,6 +129,11 @@ const menorQue16 = (data) => {
     const dataMenos16 = new Date(data.getUTCFullYear() + 16, data.getUTCMonth(), data.getUTCDate());
 
     return dataMenos16 >= dataAtual;
+}
+
+const modalClose = (modal) => {
+    const elementoModal = document.getElementById(modal);
+    elementoModal.style.display = 'none';
 }
 
 

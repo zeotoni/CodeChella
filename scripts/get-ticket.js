@@ -33,7 +33,10 @@ const getTicket = () => {
         }
 
         localStorage.setItem('dados', JSON.stringify(formValues))
-        window.location.href = './ingresso-comprado.html'
+
+        setTimeout(() => {
+            window.location.href = './ingresso-comprado.html'
+        }, 3000)
     })
 }
 

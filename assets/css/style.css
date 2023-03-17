@@ -1,6 +1,15 @@
 body {
   background-image: linear-gradient(#C8DEEF, #FBF0DD, #FACF9D);
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient(#C8DEEF, #FBF0DD, #FACF9D);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #C8DEEF;
+}
 
 .hidden {
   display: none;
@@ -15,6 +24,11 @@ body {
 .input-container__invalido .formulario__form-input {
   border: 2px solid red;
   border-radius: 5px;
+}
+
+.material-icons {
+  font-size: 28px;
+  color: #FFFFFF;
 }
 
 .btn {
@@ -33,11 +47,6 @@ body {
 .btn:hover {
   background-color: #519EC5;
   transition: 0.7s;
-}
-
-.material-icons {
-  font-size: 28px;
-  color: #FFFFFF;
 }
 
 .header__list {
