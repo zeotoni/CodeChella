@@ -8,6 +8,8 @@ const inputData = document.querySelector('[data-tipo="data"]');
 const inputDataEvento = document.querySelector('[data-tipo="dataEvento"]')
 const inputTipoIngresso = document.querySelector('[data-tipo="tipoIngresso"]');
 const form = document.querySelector('[data-form-ingresso]');
+const loader = document.getElementById('loader');
+const btnForm = document.getElementById('btn-form');
 
 const getTicket = () => {
 
@@ -33,6 +35,8 @@ const getTicket = () => {
         }
 
         localStorage.setItem('dados', JSON.stringify(formValues))
+        btnForm.style.margin = '20px auto 0'
+        loader.style.display = 'block'
 
         setTimeout(() => {
             window.location.href = './ingresso-comprado.html'

@@ -176,4 +176,62 @@ body {
 }
 
 
+.loader {
+    text-align: center;
+    padding-top: 20px;
+    display: none;
 
+    &__dot {
+        width: 24px;
+        height: 24px;
+        background: #3ac;
+        border-radius: 100%;
+        display: inline-block;
+        animation: slide 1s infinite;
+
+        &:nth-child(1) {
+            animation-delay: 0.1s;
+            background: $azul-escuro;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 0.3s;
+            background: $azul-claro;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 0.5s;
+            background: $salmao;
+        }   
+    }
+
+    &__p {
+        padding: 15px 0;
+    }
+}
+
+@-moz-keyframes slide {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+    //   opacity: 0.3;
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+    //   opacity: 0.3;
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+}
