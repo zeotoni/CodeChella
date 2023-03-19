@@ -18,6 +18,8 @@
 * Validação de formulário personalizada
 * Responsividade 
 * Geração de ingresso dinâmico com dados do formulário
+* Animação de loading ao gerar ingresso
+* Accordion 
 
 <h2>Imagens do resultado</h2>
 
