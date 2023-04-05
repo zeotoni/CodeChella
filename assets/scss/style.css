@@ -114,18 +114,6 @@ body::-webkit-scrollbar-thumb {
   opacity: 0.4;
 }
 
-.modal-container {
-  text-align: center;
-  padding-top: 50vh;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .modal {
   width: 270px;
   height: 160px;
@@ -141,8 +129,8 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   box-shadow: 4px 4px 0px #444444;
   border-radius: 16px;
-  left: -50%;
   position: absolute;
+  left: -50%;
   right: -50%;
   background-image: linear-gradient(#C8DEEF, #FBF0DD, #FACF9D);
   display: flex;
@@ -158,7 +146,7 @@ body::-webkit-scrollbar-thumb {
 .loader {
   text-align: center;
   padding-top: 50vh;
-  display: none;
+  display: block;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
@@ -190,29 +178,6 @@ body::-webkit-scrollbar-thumb {
 .loader__p {
   padding: 15px 0;
   color: #FFFFFF;
-}
-
-@-moz-keyframes slide {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes slide {
-  0% {
-    transform: scale(0.8);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(0.8);
-  }
 }
 @media screen and (min-width: 0) {
   .header {
@@ -360,7 +325,8 @@ body::-webkit-scrollbar-thumb {
   }
   .sobre__img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 16px;
     height: 381px;
   }
@@ -459,7 +425,8 @@ body::-webkit-scrollbar-thumb {
   .experiencia__img {
     width: 100%;
     height: 381px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 15px;
   }
   .experiencia__info {
@@ -519,7 +486,8 @@ body::-webkit-scrollbar-thumb {
   .detalhes__card-img {
     width: 100%;
     height: 239px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 15px;
   }
   .detalhes__card-info {
@@ -610,6 +578,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     color: #444444;
     border: 1px solid #FFFFFF;
+  }
+  .formulario__form-input::-moz-placeholder {
+    font-size: 20px;
+    font-weight: 500;
   }
   .formulario__form-input::placeholder {
     font-size: 20px;
@@ -939,6 +911,4 @@ body::-webkit-scrollbar-thumb {
   .ingresso__card-info p {
     line-height: 40px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -97,6 +97,10 @@ const validaDataNascimento = (input) => {
 
         const box = input.parentElement;
 
+        const divModal = document.createElement('div');
+        divModal.className = 'modal-container';
+        divModal.id = 'modal-box';
+
         const div = document.createElement('div');
         div.className = 'modal';
         div.id = 'modal';
@@ -107,10 +111,11 @@ const validaDataNascimento = (input) => {
         btn.className = 'modal__btn btn';
         btn.innerHTML = 'Entendi';
 
-        btn.addEventListener('click', () => modalClose(div.id))
+        btn.addEventListener('click', () => modalClose(div.id,  divModal.id))
         div.appendChild(btn)
+        divModal.appendChild(div)
        
-        box.insertBefore(div, box.firstChild)
+        box.insertBefore(divModal, box.firstChild)
     }   
 
     mensagemDeErro.data.customError = msg;
@@ -131,9 +136,11 @@ const menorQue16 = (data) => {
     return dataMenos16 >= dataAtual;
 }
 
-const modalClose = (modal) => {
+const modalClose = (modal, container) => {
     const elementoModal = document.getElementById(modal);
+    const modalContainer = document.getElementById(container);
     elementoModal.style.display = 'none';
+    modalContainer.style.display = 'none';
 }
 
 
